@@ -2,6 +2,9 @@
 
 The Logpsy model is fine-tuned for structured, cautious SRE incident analysis.
 
+# Try Locally
+Download from hugging face: https://huggingface.co/Shubhamranga11/logpsy
+
 ## Specifications
 - **Base Model:** `Qwen2.5-Coder-7B-Instruct`
 - **Tuning Method:** PEFT LoRA (LoRA rank=16, alpha=16) on H100 NVL
