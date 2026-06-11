@@ -1,0 +1,48 @@
+# Sensitive credentials and keys
+.env
+*.pem
+*.key
+EkonaraML_key.pem
+id_*
+Docuuments
+Docuuments.pub
+
+# HuggingFace & PyTorch model checkpoints/weights
+logpsy-gguf-3b_gguf/
+logpsy-gguf-7b_gguf/
+logpsy-lora-7b/
+logpsy-7b-ckpt/
+*.gguf
+*.bin
+*.pt
+*.safetensors
+triton_cache/
+unsloth_compiled_cache/
+
+# Large training datasets
+logpsy_gold_dataset.jsonl
+logpsy_massive_dataset.jsonl
+logpsy_multitask_training_dataset.jsonl
+
+# Exclude all raw training code, pipeline scripts, SFT kits, and local reports/docs from Git
+src/
+training/
+logpsy-sft-kit/
+reports/
+docs/
+
+# Virtual Environments and Python artifacts
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+pip-log.txt
+
+# OS and execution logs
+.DS_Store
+*.log
+*.pid
+nohup.out
